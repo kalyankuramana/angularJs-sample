@@ -1,0 +1,53 @@
+<div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form role="form"  method="post" ng-controller="formController" ng-submit="bookingform.submit()">
+                            <div name="customer-name" class="form-group">
+                                <input class="form-control" ng-model="bookingform.customer" placeholder="Enter Customer Name">
+                            </div>
+                            <div class="form-group" >
+                                <label>Services</label>
+                                <div class="checkbox">
+                                    <label>
+                                        
+                                         <input type="checkbox" ng-model="bookingform.checkbox.serv1" ng-true-value="1" ng-false-value="0" name="services" value="1">Hair Spa
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        
+                                        <input type="checkbox" ng-model="bookingform.checkbox.serv2" ng-false-value="0" ng-true-value="2" name="services" value="2">Hair Cut
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        
+                                        <input type="checkbox" ng-model="bookingform.checkbox.serv3"  ng-false-value="0" ng-true-value="3"name="services" value="3">Manicure
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                
+                                <input class="form-control" ng-model="bookingform.bookingTime" name="booking-time" placeholder="Enter Booking Time">
+                                </div>
+                                <div class="form-group">
+                                
+                                <input class="form-control" ng-model="bookingform.serviceTime" name="service-time" placeholder="Enter Service Time">
+                                </div>
+                                <div class="form-group">
+                                
+                                <input class="form-control" ng-model="bookingform.loc" name="location" placeholder="Enter Location">
+                                </div>
+                                <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-rupee"></i>
+                                </span>
+                                <input type="text" class="form-control" ng-model="bookingform.amount"name="amount" placeholder="Booking Amount">
+                                </div>
+                                   
+                                <button type="submit" ng-disabled="isdisabled" ng-model="isdisabled" class="btn btn-default">Submit Button</button>
+                                <button type="reset" class="btn btn-default">Reset Button</button>
+                            </form>
+                    </div>
+                    <!-- /.col-lg-6 (nested) -->
+                </div>
+                <!-- /.row (nested) -->
+            </div>
